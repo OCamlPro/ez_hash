@@ -1,4 +1,4 @@
-(lang dune 3.4)
+(lang dune 2.7)
 
 (name ez_hash)
 
