@@ -11,7 +11,7 @@ build-deps:
 doc:
 	opam exec -- opam install odoc
 	opam exec -- dune build @doc
-	mkdir docs/
+	mkdir -p docs/
 	rsync -auv --delete _build/default/_doc/_html/. docs/
 
 clean:
