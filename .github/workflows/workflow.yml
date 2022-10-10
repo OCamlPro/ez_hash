@@ -38,7 +38,7 @@ jobs:
         id: cache-opam
         with:
           path: ~/.opam
-          key: v2-${{ runner.os }}-ocaml-solidity-${{ matrix.ocaml-compiler }}-${{ hashFiles('*.opam') }}
+          key: v2-${{ runner.os }}-ez_hash-${{ matrix.ocaml-compiler }}-${{ hashFiles('*.opam') }}
 #          restore-keys: |
 #            v2-${{ runner.os }}-opam-${{ matrix.ocaml-compiler }}-
 
@@ -58,7 +58,7 @@ jobs:
 
       - run: opam pin add . -y --no-action
 
-      - run: opam depext -y ez_hash solidity-common solidity-parser solidity-typechecker solidity-test solidity-alcotest
+      - run: opam depext -y ez_hash
 #        if: steps.cache-opam.outputs.cache-hit != 'true'
 
       - run: opam install -y *.opam --deps-only --with-test
