@@ -61,7 +61,7 @@ jobs:
       - run: opam depext -y ez_hash
 #        if: steps.cache-opam.outputs.cache-hit != 'true'
 
-      - run: opam install -y *.opam --deps-only --with-test
+      - run: opam install -y . --deps-only --with-test
 #        if: steps.cache-opam.outputs.cache-hit != 'true'
 
 #      - run: opam upgrade --fixup
