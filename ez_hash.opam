@@ -5,7 +5,7 @@ synopsis: "Ez hash & crypto utilities"
 description: "An OCaml wrapping of several hashing functions in C."
 maintainer: ["Fabrice Lefessant" "Steven de Oliveira"]
 authors: ["Fabrice Lefessant" "Steven de Oliveira"]
-license: "LICENSE"
+license: "LGPL-2.1-only"
 homepage: "https://github.com/OCamlPro/ez_hash"
 bug-reports: "https://github.com/OCamlPro/ez_hash/issues"
 depends: [

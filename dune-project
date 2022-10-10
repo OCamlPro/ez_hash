@@ -13,7 +13,7 @@
 
 (maintainers "Fabrice Lefessant" "Steven de Oliveira")
 
-(license LICENSE)
+(license LGPL-2.1-only)
 
 (package
  (name ez_hash)
